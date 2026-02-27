@@ -13,7 +13,7 @@ let allCards = document.querySelector(".cards");
 
 let cards = [
     {
-        id: 1, img: "image/ring-1.jpg",
+        id: 1, img: "image/ring1.jpg",
         title: "Radiant",
         Price: "$1,200",
         Category: "Rings"
