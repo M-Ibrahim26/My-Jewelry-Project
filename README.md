@@ -16,7 +16,7 @@
 
 ## 📸 معاينة المشروع
 يمكنك زيارة الموقع من هنا: 
-[\[رابط موقعك على GitHub Pages\]](https://m-ibrahim26.github.io/My-Jewelry-Project/)
+[(https://m-ibrahim26.github.io/My-Jewelry-Project/)]
 
 ## 📂 هيكل الملفات
 * `index.html`: الصفحة الرئيسية.
