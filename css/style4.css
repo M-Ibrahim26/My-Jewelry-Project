@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f1ea 100%);
+    color: #1a1a1a;
+    font-family: 'Playfair Display', serif;
+    padding-top: 70px;
+    height: auto;
+}
+
+.container.my-home {
+    margin-left: -60px;
+}
+
+.container .search-section {
+    width: 89%;
+    margin: 25px 0px 15px 58px;
+}
+
+.navbar {
+    border-bottom: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+.navbar img {
+    border-radius: 15px;
+}
+
+.btn-outline-dark-luxury {
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark-luxury:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+.btn-outline-luxury-gold {
+    color: #fff;
+    background-color: #c9a25c;
+    border-color: #c5a059;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-luxury-gold:hover {
+    color: #fff;
+    background-color: #a8844f;
+    border-color: #a8844f;
+}
+
+.search-section .home {
+    background: #fff;
+    width: 90%;
+    margin: 20px 57px;
+    padding: 10px;
+}
+
+.search-section {
+    background: #fff;
+    width: 60%;
+    margin: 20px 57px;
+    padding: 10px;
+}
+
+.search-section .btn-dark {
+    background-color: #1a1a1a !important;
+    border: 1px solid #1a1a1a !important;
+    color: #fff !important;
+    border-radius: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.4s ease;
+}
+
+.search-section .btn-dark:hover {
+    background-color: #a8844f !important;
+    border-color: #a8844f !important;
+}
+
+.search-section .form-control,
+.search-section .form-select {
+    border-radius: 0;
+    border: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.search-section .form-control:focus,
+.search-section .form-select:focus {
+    border-color: #a8844f !important;
+    box-shadow: 0 0 5px rgba(197, 160, 89, 0.2) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none !important;
+    background-color: #e7f1ff;
+    border-color: #a8844f;
+}
+
+.form-control {
+    padding: 6px;
+}
+
+
+.product-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 0;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #fff;
+}
+
+.product-card:hover {
+    border-color: #c5a059;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product-img {
+    border-radius: 0;
+    padding: 10px;
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #1a1a1a !important;
+    border: none !important;
+    border-radius: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #c5a059 !important;
+}
+
+.text-dark {
+    color: #c5a059 !important;
+    font-size: 1.2rem;
+}
+
+.fa-heart {
+    transition: 0.3s;
+     cursor: pointer;
+}
+
+.fa-heart:hover {
+    color: #e74c3c !important;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.login-card {
+    width: 80%;
+    max-width: 850px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-body {
+    padding: 30px 60px;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.cards {
+    width: 90%;
+}
+
+.cart-icon-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-badge {
+    font-size: 0.7rem;
+}
+
+.card-footer-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#username {
+    /* display: none; */
+    font-weight: bold;
+    color: #c5a059;
+    pointer-events: none;
+    width: auto;
+}
+
+/* ---------------------------------------------------------- */
+
+/* 1. إخفاء الـ Checkbox تماماً */
+.heart-box input {
+    display: none;
+}
+
+/* 2. تنسيق الصندوق والقلب */
+.heart-box {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.heart-box i {
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+/* 3. الحالة الافتراضية: إخفاء القلب الممتلئ (الأحمر) */
+.heart-box .filled {
+    display: none;
+    color: red;
+}
+
+/* 4. الحالة الافتراضية: إظهار القلب المفرغ (السكني) */
+.heart-box .empty {
+    color: #888;
+}
+
+/* 5. السحر: عند الضغط (Checked) اعكس الاختفاء والظهور */
+.heart-box input:checked+label .filled {
+    display: inline-block;
+    /* اظهر الأحمر */
+}
+
+.heart-box input:checked+label .empty {
+    display: none;
+    /* اخفي السكني */
+}
+
+/* تأثير نبض خفيف عند الضغط */
+.heart-box i:active {
+    transform: scale(1.4);
+}
+
+/* ----------------------------------------- */
+
+.cart-dropdown {
+    left: -55px !important;
+    /* display: none; */
+   
+}
+
+.cart-icon{
+    cursor: pointer;
+}
+
+/* -------------------------------------------- */
