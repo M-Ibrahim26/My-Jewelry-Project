@@ -8,7 +8,6 @@ loginBtn.addEventListener("click", function (e) {
     let getFirstName = localStorage.getItem("firstName");
     let getPassword = localStorage.getItem("password");
 
-    // هذه الأسطر تعمل هنا لأنها "داخل" نطاق المتغيرات
     console.log("Input Name:", firstName.value.trim());
     console.log("Stored Name:", getFirstName);
 
